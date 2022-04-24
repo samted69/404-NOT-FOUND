@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fbf6fe;
+}
+
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace;
+ */
+
+/* 
+header text - #333333
+p text - #4F4F4F
+a text - #ffffff
+footer text - #BDBDBD
+*/
+
+/* HEADER STYLING */
+header {
+  margin-left: 77px;
+  margin-top: 40px;
+}
+header h1 {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* CONTENT STYLING */
+.content {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 265px;
+  margin-left: 77px;
+  margin-right: 119px;
+  margin-bottom: 326.57px;
+  column-gap: 118.78px;
+}
+
+.image {
+  width: 539.22px;
+  height: 447.43px;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  width: 586px;
+  height: 190px;
+}
+
+.text h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.text p {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  width: 90%;
+  letter-spacing: -0.035em;
+  margin-top: 36px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 64px;
+  width: 216px;
+  height: 68px;
+  background-color: #333;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 23px;
+}
+.text a {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.035em;
+}
+.text a:hover {
+  transform: scale(0.9);
+}
+
+/* FOOTER */
+footer {
+  margin-bottom: 24px;
+  text-align: center;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+footer a {
+  color: #bdbdbd;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* SMALLER SCREEN */
+@media screen and (max-width: 770px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  header {
+    margin-left: 24px;
+    margin-top: 20px;
+  }
+  .content {
+    display: grid;
+    margin-top: 109px;
+    margin-left: 24px;
+  }
+  .image {
+    width: 286.83px;
+    height: 238px;
+  }
+  .text {
+    width: 320px;
+  }
+  .text h2 {
+    font-size: 48px;
+  }
+  .text p {
+    font-size: 18px;
+  }
+}
